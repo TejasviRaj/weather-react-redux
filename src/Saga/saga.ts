@@ -1,3 +1,5 @@
+//Author-Tejasvi Raj Pant
+
 import { put, call, takeLatest } from 'redux-saga/effects'
 import { fetchWeatherRequested, fetchWeatherSucceeded, fetchWeatherFail } from '../Actions/actionCreators'
 import { FETCH_WEATHER } from '../Actions/ActionTypes'

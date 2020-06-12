@@ -1,3 +1,5 @@
+//Author-Tejasvi Raj Pant
+
 import {
 	FETCH_WEATHER,
 } from './ActionTypes';

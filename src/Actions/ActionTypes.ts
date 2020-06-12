@@ -1,3 +1,5 @@
+//Author-Tejasvi Raj Pant
+
 export const FETCH_WEATHER = 'FETCH_WEATHER'
 export type FETCH_WEATHER = typeof FETCH_WEATHER
 

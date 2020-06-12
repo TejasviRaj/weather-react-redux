@@ -4,6 +4,8 @@ import {IActionCreator} from '../Actions/IActionCreator';
 import initialState from '../Store/initialState'
 
 
+//Author-Tejasvi Raj Pant
+
 const weatherReducer = (state: IWeather = initialState, action: IActionCreator): IWeather => {
 	switch (action.type) {
 		case FETCH_WEATHER_REQUESTED:

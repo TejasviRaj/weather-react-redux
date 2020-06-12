@@ -1,3 +1,5 @@
+//Author-Tejasvi Raj Pant
+
 export default interface ICurrent {
     cloudcover: number
     feelslike: number

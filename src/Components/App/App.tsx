@@ -1,9 +1,11 @@
 import React, { useEffect} from 'react';
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchWeather } from './Actions/actionCreators'
-import {RootState} from './Reducers/rootReducer'
+import { fetchWeather } from '../../Actions/actionCreators'
+import {RootState} from '../../Reducers/rootReducer'
 
+
+//Author-Tejasvi Raj Pant
 
 const App = () => {
   const state: RootState = useSelector((state: RootState) => state)

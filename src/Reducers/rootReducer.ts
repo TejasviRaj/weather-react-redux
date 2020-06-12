@@ -1,3 +1,5 @@
+//Author-Tejasvi Raj Pant
+
 import weatherReducer from './weatherReducer';
 import { combineReducers } from 'redux';
 

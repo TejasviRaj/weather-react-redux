@@ -1,3 +1,5 @@
+//Author-Tejasvi Raj Pant
+
 import {API_KEY, ROOT_URL} from './config';
 
 import axios from 'axios';

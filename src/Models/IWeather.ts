@@ -1,3 +1,5 @@
+//Author-Tejasvi Raj Pant
+
 import ILocation from './ILocation';
 import ICurrent from './ICurrent';
 

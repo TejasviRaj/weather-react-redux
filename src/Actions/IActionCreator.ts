@@ -1,3 +1,5 @@
+//Author-Tejasvi Raj Pant
+
 import IWeatherRequestedSucceeded from './IFetchWeatherSucceeded';
 import IFetchWeatherFail from './IFetchWeatherFail';
 import IFetchWeatherRequested from './IFetchWeatherRequested';

@@ -1,3 +1,5 @@
+//Author-Tejasvi Raj Pant
+
 import IWeather from '../Models/IWeather';
 
 const initialState: IWeather = {

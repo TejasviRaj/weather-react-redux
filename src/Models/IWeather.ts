@@ -5,5 +5,5 @@ export default interface IWeather {
 	isLoading: boolean
 	location: null | ILocation
 	current: null | ICurrent
-	error: null | string
+	errorMessage: null | string
 	}

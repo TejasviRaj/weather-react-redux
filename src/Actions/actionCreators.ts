@@ -9,6 +9,7 @@ import IFetchWeatherSucceeded from '../Actions/IFetchWeatherSucceeded';
 import IFetchWeatherFail from '../Actions/IFetchWeatherFail';
 import IFetchWeatherRequested from '../Actions/IFetchWeatherRequested';
 import IFetchWeather from '../Actions/IFetchWeather';
+import IWeather from '../Models/IWeather';
 
 
 export const fetchWeather = (city: string): IFetchWeather => ({
@@ -21,7 +22,10 @@ export const fetchWeatherFail = (errorMessage: string): IFetchWeatherFail => ({
 	type: FETCH_WEATHER_FAIL,
 	errorMessage
 })
-export const fetchWeatherSucceeded = (payload: any): IFetchWeatherSucceeded => ({
+export const fetchWeatherSucceeded = (payload: IWeather): IFetchWeatherSucceeded => {
+	console.log("payload");
+	console.log(payload);
+	return ({
 	type: FETCH_WEATHER_SUCCEEDED,
 	payload
-})
+})}

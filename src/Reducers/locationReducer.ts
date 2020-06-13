@@ -7,7 +7,7 @@ import ILocation from '../Models/ILocation';
 
 //Author-Tejasvi Raj Pant
 
-const locationReducer = (state: ILocation, action: IActionCreator): ILocation => {
+const locationReducer = (state: ILocation = initialState.location, action: IActionCreator): ILocation => {
 	switch (action.type) {
 		case FETCH_LOCATION_REQUESTED:
 			return {

@@ -1,9 +1,9 @@
 //Author-Tejasvi Raj Pant
 
 import { put, call, takeLatest } from 'redux-saga/effects'
-import { fetchWeatherRequested, fetchWeatherSucceeded, fetchWeatherFail } from '../Actions/actionCreatorsWeather'
-import { FETCH_WEATHER } from '../Actions/ActionTypes'
-import IFetchWeather from '../Actions/IFetchWeather';
+import { fetchWeatherRequested, fetchWeatherSucceeded, fetchWeatherFail } from '../Actions/Weather/actionCreatorsWeather'
+import { FETCH_WEATHER } from '../Actions/Weather/ActionTypes'
+import IFetchWeather from '../Actions/Weather/IFetchWeather';
 import {fetchWeather} from './fetchWeather';
 
 export function* fetchWeatherWatcher() {

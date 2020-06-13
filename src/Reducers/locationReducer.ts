@@ -1,31 +1,30 @@
-import { FETCH_WEATHER_REQUESTED, FETCH_WEATHER_SUCCEEDED, FETCH_WEATHER_FAIL } from '../Actions/ActionTypes';
+import { FETCH_LOCATION ,FETCH_LOCATION_REQUESTED, FETCH_LOCATION_SUCCEEDED, FETCH_LOCATION_FAIL } from '../Actions/Location/ActionTypes';
 import IWeather from '../Models/IWeather';
 import {IActionCreator} from '../Actions/IActionCreator';
 import initialState from '../Store/initialState'
+import ILocation from '../Models/ILocation';
 
 
 //Author-Tejasvi Raj Pant
 
-const locationReducer = (state: IWeather = initialState, action: IActionCreator): IWeather => {
+const locationReducer = (state: ILocation, action: IActionCreator): ILocation => {
 	switch (action.type) {
-		case FETCH_WEATHER_REQUESTED:
+		case FETCH_LOCATION_REQUESTED:
 			return {
 				...state,
-				isLoading: true,
-				errorMessage: null
+				
 			}
-		case FETCH_WEATHER_SUCCEEDED:
+		case FETCH_LOCATION_SUCCEEDED:
 			return {
 				...state,
-				daily: action.payload.daily,
-				errorMessage: null,
-				isLoading: false,
+				lat: action.location.lat,
+				long: action.location.long
+				
 			}
-		case FETCH_WEATHER_FAIL:
+		case FETCH_LOCATION_FAIL:
 			return {
 				...state,
-				errorMessage: action.errorMessage,
-				isLoading: false,
+			
 			}
 		default:
 			return state
@@ -33,6 +32,6 @@ const locationReducer = (state: IWeather = initialState, action: IActionCreator)
 	}
 };
 
-export default weatherReducer;
+export default locationReducer;
 
 

@@ -1,10 +1,9 @@
-import { FETCH_WEATHER_REQUESTED, FETCH_WEATHER_SUCCEEDED, FETCH_WEATHER_FAIL } from '../Actions/ActionTypes';
+//Author-Tejasvi Raj Pant
+
+import { FETCH_WEATHER_REQUESTED, FETCH_WEATHER_SUCCEEDED, FETCH_WEATHER_FAIL } from '../Actions/Weather/ActionTypes';
 import IWeather from '../Models/IWeather';
 import {IActionCreator} from '../Actions/IActionCreator';
 import initialState from '../Store/initialState'
-
-
-//Author-Tejasvi Raj Pant
 
 const weatherReducer = (state: IWeather = initialState, action: IActionCreator): IWeather => {
 	switch (action.type) {

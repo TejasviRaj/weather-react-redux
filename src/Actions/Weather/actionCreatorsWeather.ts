@@ -11,7 +11,7 @@ import IFetchWeatherSucceeded from './IFetchWeatherSucceeded';
 import IFetchWeatherFail from './IFetchWeatherFail';
 import IFetchWeatherRequested from './IFetchWeatherRequested';
 import IFetchWeather from './IFetchWeather';
-import IWeather from '../Models/IWeather';
+import IWeather from '../../Models/IWeather';
 
 
 export const fetchWeather = (lat: number, long: number): IFetchWeather => ({

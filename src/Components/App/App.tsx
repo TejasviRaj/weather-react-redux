@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchWeather } from '../../Actions/actionCreatorsWeather'
+import { fetchWeather } from '../../Actions/Weather/actionCreatorsWeather'
 import { RootState } from '../../Reducers/rootReducer';
 import WeatherCard from '../WeatherCard/WeatherCard';
 

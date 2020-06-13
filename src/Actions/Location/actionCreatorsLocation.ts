@@ -11,7 +11,7 @@ import IFetchLocationSucceeded from './IFetchLocationSucceeded ';
 import IFetchLocationFail from './IFetchLocationFail';
 import IFetchLocationRequested from './IFetchLocationRequested';
 import IFetchLocation from './IFetchLocation';
-import ILocation from '../Models/ILocation';
+import ILocation from '../../Models/ILocation';
 
 export const fetchLocation = (city: string): IFetchLocation => ({
 	type: FETCH_LOCATION,

@@ -1,6 +1,5 @@
 //Author-Tejasvi Raj Pant
 
-import ILocation from './IDaily';
 import IDaily from './IDaily';
 
 export default interface IWeather {

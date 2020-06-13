@@ -31,7 +31,7 @@ const ForecastInfo = () => {
             {
                 forecastInfoArray.map ((forecast, index) => (
                     <li className= {index ? 'forecastItem' : 'forecastItem active'}>
-                    <img src= {`http://openweathermap.org/img/wn/${forecast.icon}.png`} />
+                    <img src= {`http://openweathermap.org/img/wn/${forecast.icon}.png`} alt =""/>
                     <span className="day-name">{forecast.date} </span>
                     <span className="day-temp">{forecast.temp}°C</span>
                 </li>

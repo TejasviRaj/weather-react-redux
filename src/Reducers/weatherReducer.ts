@@ -5,7 +5,7 @@ import IWeather from '../Models/IWeather';
 import {IActionCreator} from '../Actions/IActionCreator';
 import initialState from '../Store/initialState'
 
-const weatherReducer = (state: IWeather = initialState, action: IActionCreator): IWeather => {
+const weatherReducer = (state: IWeather = initialState.weather , action: IActionCreator): IWeather => {
 	switch (action.type) {
 		case FETCH_WEATHER_REQUESTED:
 			return {

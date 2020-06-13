@@ -8,7 +8,7 @@ import { fetchWeatherWatcher } from '../Saga/saga';
 import initialState from './initialState'
 
 const sagaMiddleware = createSagaMiddleware()
-const store = createStore(rootReducer, initialState, applyMiddleware(sagaMiddleware))
+const store = createStore(rootReducer, applyMiddleware(sagaMiddleware))
 sagaMiddleware.run(fetchWeatherWatcher)
 
 export default store

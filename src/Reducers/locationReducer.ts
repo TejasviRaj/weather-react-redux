@@ -1,5 +1,4 @@
-import { FETCH_LOCATION ,FETCH_LOCATION_REQUESTED, FETCH_LOCATION_SUCCEEDED, FETCH_LOCATION_FAIL } from '../Actions/Location/ActionTypes';
-import IWeather from '../Models/IWeather';
+import { FETCH_LOCATION_REQUESTED, FETCH_LOCATION_SUCCEEDED, FETCH_LOCATION_FAIL } from '../Actions/Location/ActionTypes';
 import {IActionCreator} from '../Actions/IActionCreator';
 import initialState from '../Store/initialState'
 import ILocation from '../Models/ILocation';
@@ -18,10 +17,11 @@ const locationReducer = (state: ILocation = initialState.location, action: IActi
 			return {
 				...state,
 				lat: action.location.lat,
-				long: action.location.long
+				lng: action.location.lng
 				
 			}
 		case FETCH_LOCATION_FAIL:
+
 			return {
 				...state,
 			

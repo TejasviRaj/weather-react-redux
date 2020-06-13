@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchWeather } from '../../Actions/Weather/actionCreatorsWeather'
 import { RootState } from '../../Reducers/rootReducer';
 import WeatherCard from '../WeatherCard/WeatherCard';
+import { fetchLocation } from '../../Actions/Location/actionCreatorsLocation';
 
 const App = () => {
   const state: RootState = useSelector((state: RootState) => state)
@@ -13,6 +14,8 @@ const App = () => {
 
   useEffect(() => {
     dispatch(fetchWeather(27.7, 85.32));
+    dispatch(fetchLocation("Kathmandu"));
+
   }, [dispatch])
   console.log("FROM APP");
   console.log(state);

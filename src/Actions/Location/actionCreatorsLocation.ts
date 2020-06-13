@@ -24,6 +24,7 @@ export const fetchLocationFail = (errorMessage: string): IFetchLocationFail => (
 	errorMessage
 })
 export const fetchLocationSucceeded = (location: ILocation): IFetchLocationSucceeded => {
+
 	return ({
 	type: FETCH_LOCATION_SUCCEEDED,
 	location: location

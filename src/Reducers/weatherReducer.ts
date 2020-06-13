@@ -6,7 +6,6 @@ import {IActionCreator} from '../Actions/IActionCreator';
 import initialState from '../Store/initialState'
 
 const weatherReducer = (state: IWeather = initialState.weather , action: IActionCreator): IWeather => {
-	console.log("weatherreducer")
 
 	switch (action.type) {
 		case FETCH_WEATHER_REQUESTED:

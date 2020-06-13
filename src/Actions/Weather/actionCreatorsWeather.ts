@@ -14,7 +14,7 @@ import IFetchWeather from './IFetchWeather';
 import IWeather from '../../Models/IWeather';
 
 
-export const fetchWeather = (lat: number, long: number): IFetchWeather => ({
+export const fetchWeather = (lat: number | null, long: number | null): IFetchWeather => ({
 	type: FETCH_WEATHER,
 	lat,
 	long
@@ -26,8 +26,6 @@ export const fetchWeatherFail = (errorMessage: string): IFetchWeatherFail => ({
 	errorMessage
 })
 export const fetchWeatherSucceeded = (payload: IWeather): IFetchWeatherSucceeded => {
-	console.log("payload");
-	console.log(payload);
 	return ({
 	type: FETCH_WEATHER_SUCCEEDED,
 	payload

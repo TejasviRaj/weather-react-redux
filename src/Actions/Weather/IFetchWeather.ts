@@ -6,6 +6,6 @@ import {
 
 export default interface IFetchWeather {
 	type: FETCH_WEATHER
-	lat: number,
-	long: number
+	lat: number | null,
+	long: number | null
 }

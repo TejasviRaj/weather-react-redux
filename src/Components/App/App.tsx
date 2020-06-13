@@ -10,13 +10,20 @@ import { fetchLocation } from '../../Actions/Location/actionCreatorsLocation';
 
 const App = () => {
   const state: RootState = useSelector((state: RootState) => state)
+  const {location} = state;
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(fetchWeather(27.7, 85.32));
-    dispatch(fetchLocation("Kathmandu"));
+    dispatch(fetchLocation("London"));
 
   }, [dispatch])
+
+  useEffect(() => {
+      if (location && location.lat && location.lng) {
+        dispatch(fetchWeather(location.lat, location.lng));
+
+      }
+  }, [location])
   console.log("FROM APP");
   console.log(state);
 

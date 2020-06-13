@@ -17,8 +17,7 @@ const weatherReducer = (state: IWeather = initialState, action: IActionCreator):
 		case FETCH_WEATHER_SUCCEEDED:
 			return {
 				...state,
-				location: action.payload.location,
-				current: action.payload.current,
+				daily: action.payload.daily,
 				errorMessage: null,
 				isLoading: false,
 			}

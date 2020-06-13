@@ -1,11 +1,10 @@
 //Author-Tejasvi Raj Pant
 
-import ILocation from './ILocation';
-import ICurrent from './ICurrent';
+import ILocation from './IDaily';
+import IDaily from './IDaily';
 
 export default interface IWeather {
 	isLoading: boolean
-	location: null | ILocation
-	current: null | ICurrent
+	daily: null | IDaily[]
 	errorMessage: null | string
 	}

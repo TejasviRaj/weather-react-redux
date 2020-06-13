@@ -1,4 +1,5 @@
 //Author-Tejasvi Raj Pant
 
-export const API_KEY = "28d9389a1dc2dff1063d434bedd4238a";
-export const ROOT_URL = `http://api.weatherstack.com/current`;
+export const API_KEY = "5067c8b178326959f4731b3b1953cfd2";
+export const ROOT_URL = `https://api.openweathermap.org/data/2.5/onecall`;
+export const EXCLUDE = ['minutely' ,'hourly', 'current'];

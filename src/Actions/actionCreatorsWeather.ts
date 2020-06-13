@@ -7,16 +7,17 @@ import {
 	FETCH_WEATHER_FAIL,
 } from './ActionTypes';
 
-import IFetchWeatherSucceeded from '../Actions/IFetchWeatherSucceeded';
-import IFetchWeatherFail from '../Actions/IFetchWeatherFail';
-import IFetchWeatherRequested from '../Actions/IFetchWeatherRequested';
-import IFetchWeather from '../Actions/IFetchWeather';
+import IFetchWeatherSucceeded from './IFetchWeatherSucceeded';
+import IFetchWeatherFail from './IFetchWeatherFail';
+import IFetchWeatherRequested from './IFetchWeatherRequested';
+import IFetchWeather from './IFetchWeather';
 import IWeather from '../Models/IWeather';
 
 
-export const fetchWeather = (city: string): IFetchWeather => ({
+export const fetchWeather = (lat: number, long: number): IFetchWeather => ({
 	type: FETCH_WEATHER,
-	city
+	lat,
+	long
 })
 export const fetchWeatherRequested = (): IFetchWeatherRequested => ({ type: FETCH_WEATHER_REQUESTED })
 

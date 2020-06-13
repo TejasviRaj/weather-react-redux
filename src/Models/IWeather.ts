@@ -7,4 +7,6 @@ export default interface IWeather {
 	isLoading: boolean
 	daily: null | IDaily[]
 	errorMessage: null | string
+	lat: number | null,
+	long: number | null
 	}

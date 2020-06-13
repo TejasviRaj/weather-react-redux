@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchWeather } from '../../Actions/actionCreators'
+import { fetchWeather } from '../../Actions/actionCreatorsWeather'
 import { RootState } from '../../Reducers/rootReducer';
 import WeatherCard from '../WeatherCard/WeatherCard';
 
@@ -12,7 +12,7 @@ const App = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(fetchWeather("Kathmandu"));
+    dispatch(fetchWeather(27.7, 85.32));
   }, [dispatch])
   console.log("FROM APP");
   console.log(state);

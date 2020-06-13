@@ -15,7 +15,11 @@ function* fetchLocationWorker(props: IFetchLocation) {
 		yield put(fetchLocationRequested())
 
 		const response = yield call(fetchLocation, props.city);
-		yield put(fetchLocationSucceeded(response.data.results[0].geometry))
+		let location = response.data.results[0].geometry;
+		console.log("loc");
+		location.name = response.data.results[0].formatted
+		console.log(location);
+		yield put(fetchLocationSucceeded(location))
 	} catch (error) {
 		yield put(fetchLocationFail("Error"))
 	}

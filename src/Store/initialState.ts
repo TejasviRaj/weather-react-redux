@@ -11,7 +11,8 @@ const weather: IWeather = {
 
 const location: ILocation = {
 	lat: null,
-	lng: null
+	lng: null,
+	name: null
 }
 
 const initialState = {

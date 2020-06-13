@@ -17,7 +17,8 @@ const locationReducer = (state: ILocation = initialState.location, action: IActi
 			return {
 				...state,
 				lat: action.location.lat,
-				lng: action.location.lng
+				lng: action.location.lng,
+				name: action.location.name
 				
 			}
 		case FETCH_LOCATION_FAIL:

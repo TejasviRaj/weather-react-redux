@@ -5,5 +5,6 @@ import IWeather from '../Models/IWeather';
 
 export default interface IFetchLocationSucceeded {
 	type: FETCH_LOCATION_SUCCEEDED
-	payload: IWeather
+	lat: number,
+	long: number
 }

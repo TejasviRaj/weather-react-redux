@@ -24,8 +24,6 @@ const App = () => {
 
       }
   }, [location])
-  console.log("FROM APP");
-  console.log(state);
 
   return (
     <>

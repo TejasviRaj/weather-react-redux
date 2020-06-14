@@ -1,23 +1,32 @@
 //Author-Tejasvi Raj Pant
 
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../../../Reducers/rootReducer';
 
-const detailInfoArray = [
-    {
-        title: 'PRECIPITATION',
-        value: '0 %'
-    },
-    {
-        title: 'HUMIDITY',
-        value: '34 %'
-    },
-    {
-        title: 'WIND',
-        value: '0 km/h'
-    },
-]
+
 
 const DetailInfo = () => {
+    const pressure = useSelector((state: RootState) => state.weather.daily && state.weather.daily[1].pressure);
+    const humidity = useSelector((state: RootState) => state.weather.daily && state.weather.daily[1].humidity);
+    const windSpeed = useSelector((state: RootState) => state.weather.daily && state.weather.daily[1].wind_speed);
+
+
+    const detailInfoArray = [
+        {
+            title: 'PRESSURE',
+            value: `${pressure} hPa`
+        },
+        {
+            title: 'HUMIDITY',
+            value: `${humidity} %`
+        },
+        {
+            title: 'WIND SPEED',
+            value: `${windSpeed} meter/sec`
+        },
+    ]
+
     return (
         <div className="detail-info">
             {

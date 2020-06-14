@@ -6,12 +6,18 @@ import './index.css';
 import App from './Components/App/App';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
-import store from './Store/store'
+import store from './Store/store';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store = {store}>
-    <App />
+    <BrowserRouter>
+    <Route exact path={process.env.PUBLIC_URL + "/"} component = {App}>
+
+    </Route>
+
+    </BrowserRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

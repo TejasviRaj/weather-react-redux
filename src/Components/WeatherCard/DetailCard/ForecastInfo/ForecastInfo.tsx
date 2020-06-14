@@ -6,7 +6,6 @@ import getFormattedFullDate from '../../../../Helpers/getFormattedFullDate'
 
 const ForecastInfo = () => {
     const forecastInfoArray: IDaily[] | undefined = useSelector((state: RootState) => state.weather.daily?.slice(1,5));
-    console.log("forecast");
     return (
         <div>
         <ul className="forecast">

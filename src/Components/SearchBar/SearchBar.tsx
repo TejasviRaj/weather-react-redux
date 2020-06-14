@@ -23,7 +23,7 @@ const SearchBar = (props: PropTypes) => {
                                         <i className="fas fa-search h4 text-body"></i>
                                     </div>
                                     <div className="col">
-                                        <input className="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords" value = {props.searchText} onChange = {(e) => handleChange(e)}/>
+                                        <input className="form-control form-control-lg form-control-borderless" type="search" placeholder="Search Location" value = {props.searchText} onChange = {(e) => handleChange(e)}/>
                                     </div>
                                     <div className="col-auto">
                                         <button className="btn btn-lg btn-dark" type="submit">Search</button>

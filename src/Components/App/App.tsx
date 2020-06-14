@@ -8,6 +8,7 @@ import { RootState } from '../../Reducers/rootReducer';
 import WeatherCard from '../WeatherCard/WeatherCard';
 import { fetchLocation } from '../../Actions/Location/actionCreatorsLocation';
 import SearchBar from '../SearchBar/SearchBar';
+import {INITIAL_LOCATION} from './config';
 
 const App = () => {
   const state: RootState = useSelector((state: RootState) => state)
@@ -16,7 +17,7 @@ const App = () => {
   const [searchText, setSearchText] = useState('');
 
   useEffect(() => {
-    dispatch(fetchLocation("London"));
+    dispatch(fetchLocation(INITIAL_LOCATION));
 
   }, [dispatch])
 

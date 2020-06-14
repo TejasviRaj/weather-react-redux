@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../../Reducers/rootReducer';
 import capitalizeFirstLetter from '../../../../Helpers/capitalizeFirstLetter';
+import './WeatherInfo.css';
 
 const WeatherInfo = () => {
     const temp: number | null = useSelector((state: RootState) => state.weather.daily && state.weather.daily[1].temp.day);

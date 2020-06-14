@@ -1,0 +1,26 @@
+/* Author- Tejasvi Raj Pant */
+
+.weather-container {
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+}
+
+.temperature {
+	margin: 0;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+.description {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 500px) {
+
+	.weather-container {
+		right: 0;
+	}
+	
+  }

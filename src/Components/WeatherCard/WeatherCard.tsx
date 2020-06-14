@@ -3,6 +3,8 @@
 import React from 'react';
 import SummaryCard from './SummaryCard/SummaryCard'
 import DetailCard from './DetailCard/DetailCard';
+import './WeatherCard.css';
+
 const WeatherCard = () => {
     return (
         <div className="main-container">

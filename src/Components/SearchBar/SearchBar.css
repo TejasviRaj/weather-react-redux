@@ -1,0 +1,18 @@
+/* Author- Tejasvi Raj Pant */
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.col-auto {
+	margin-right: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

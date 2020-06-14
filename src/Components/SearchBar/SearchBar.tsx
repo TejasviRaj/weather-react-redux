@@ -1,4 +1,5 @@
 import React, {ChangeEvent, SyntheticEvent} from 'react';
+import './SearchBar.css'
 
 interface PropTypes {
     searchText: string,

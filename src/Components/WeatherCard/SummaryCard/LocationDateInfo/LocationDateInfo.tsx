@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../../../../Reducers/rootReducer';
 import getDay from '../../../../Helpers/getDay';
 import getFormattedFullDate from '../../../../Helpers/getFormattedFullDate';
+import './LocationDateInfo.css'
 
 const LocationDateInfo = () => {
     const dt: number = useSelector((state: RootState) => state && state.weather && state.weather.daily && state?.weather?.daily[1].dt) || 0;

@@ -1,0 +1,9 @@
+/* Author- Tejasvi Raj Pant */
+
+.detail-card {
+
+	position: relative;
+	float: left;
+	height: 100%;
+	padding-top: 25px;
+}

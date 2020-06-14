@@ -1,6 +1,7 @@
 import React from 'react';
 import LocationDateInfo from './LocationDateInfo/LocationDateInfo';
 import WeatherInfo from './WeatherInfo/WeatherInfo';
+import './SummaryCard.css';
 
 const SummaryCard = () => {
     return (

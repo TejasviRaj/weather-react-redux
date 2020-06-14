@@ -2,7 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../../Reducers/rootReducer';
 import IDaily from '../../../../Models/IDaily';
-import getFormattedFullDate from '../../../../Helpers/getFormattedFullDate'
+import getFormattedFullDate from '../../../../Helpers/getFormattedFullDate';
+import './ForecastInfo.css';
 
 const ForecastInfo = () => {
     const forecastInfoArray: IDaily[] | undefined = useSelector((state: RootState) => state.weather.daily?.slice(1,5));

@@ -1,0 +1,24 @@
+/* Author- Tejasvi Raj Pant */
+
+.title {
+	float: left;
+	font-weight: 700;
+}
+
+.value {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.detail-info {
+	padding: 15px;
+	margin: 0 25px 25px 25px;
+	border-radius: 10px;
+}
+
+.detail-info>div:not(:last-child) {
+	margin: 0 0 10px 0;
+}

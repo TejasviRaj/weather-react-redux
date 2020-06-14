@@ -1,0 +1,35 @@
+/* Author- Tejasvi Raj Pant */
+
+.summary-card {
+	position: relative;
+	height: 100%;
+	border-radius: 25px;
+	background-image: url("https://openweathermap.org/themes/openweathermap/assets/img/shutterstock_298797602_1.jpg");
+	width: 300px;
+	-webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+	-webkit-transition: -webkit-transform 300ms ease;
+	transition: -webkit-transform 300ms ease;
+	-o-transition: transform 300ms ease;
+	transition: transform 300ms ease;
+	transition: transform 300ms ease, -webkit-transform 300ms ease;
+	-webkit-transform: translateZ(0) scale(1.02) perspective(1000px);
+	        transform: translateZ(0) scale(1.02) perspective(1000px);
+	float: left;
+}
+
+.gradient-background {
+	height: 100%;
+	background-image: linear-gradient( 135deg, rgb(17, 23, 24) 10%, rgb(39, 39, 56) 100%);
+	border-radius: 25px;
+	opacity: 0.8;
+	
+}
+
+@media only screen and (max-width: 500px) {
+
+	.summary-card  {
+		width: 300px;
+	}
+		
+  }

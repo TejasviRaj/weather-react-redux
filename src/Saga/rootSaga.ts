@@ -1,3 +1,5 @@
+//Author-Tejasvi Raj Pant
+
 import { all } from 'redux-saga/effects';
 import {fetchWeatherWatcher} from './Weather/weatherSaga';
 import {fetchLocationWatcher} from './Location/locationSaga'

@@ -1,3 +1,5 @@
+//Author-Tejasvi Raj Pant
+
 import React from 'react';
 import DetailInfo from './DetailInfo/DetailInfo';
 import ForeCastInfo from './ForecastInfo/ForecastInfo';

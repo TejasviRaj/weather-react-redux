@@ -19,7 +19,7 @@
 
 .card {
     justify-content: center;
-    height: 3.75rem;
+    height: 3.2rem;
 }
 
 .card-body {
@@ -29,4 +29,11 @@
     display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.btn {
+    padding: .2rem .4rem;
+    border-color: #FFFFFF;
+    border-radius: 1.5rem;
+    width: 5.5rem;
 }
